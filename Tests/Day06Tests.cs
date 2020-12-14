@@ -6,7 +6,7 @@ using Xunit;
 
 namespace Tests
 {
-    public class Day6Tests
+    public class Day06Tests
     {
         [Fact]
         public void CalculateAnswersSomeoneAnsweredYesOn_ShouldGiveCorrectValue_GivenSpecificValidInput()
@@ -22,7 +22,7 @@ namespace Tests
         [Fact]
         public void SumOfCalculateAnswersSomeoneAnsweredYesOn()
         {
-            var input = File.ReadAllText("Inputs\\day6.txt");
+            var input = File.ReadAllText("Inputs\\day06.txt");
             var inputGroups = input.Split("\n\n");
             var sut = new CustomsFormCalculator();
 
@@ -45,7 +45,7 @@ namespace Tests
         [Fact]
         public void SumOfCalculateAnswersEveryoneAnsweredYesOn()
         {
-            var input = File.ReadAllText("Inputs\\day6.txt");
+            var input = File.ReadAllText("Inputs\\day06.txt");
             var inputGroups = input.Split("\n\n");
             var sut = new CustomsFormCalculator();
 

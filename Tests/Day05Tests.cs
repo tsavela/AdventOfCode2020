@@ -6,7 +6,7 @@ using Xunit;
 
 namespace Tests
 {
-    public class Day5Tests
+    public class Day05Tests
     {
         [Theory]
         [InlineData("BFFFBBFRRR", 70, 7, 567)]
@@ -24,7 +24,7 @@ namespace Tests
         [Fact]
         public void CalculateMaxIdFromInput()
         {
-            var input = File.ReadLines("Inputs\\day5.txt");
+            var input = File.ReadLines("Inputs\\day05.txt");
 
             var max = input.Max(seatDefinition => new Seat(seatDefinition).Id);
 
@@ -34,7 +34,7 @@ namespace Tests
         [Fact]
         public void FindMySeat()
         {
-            var input = File.ReadLines("Inputs\\day5.txt");
+            var input = File.ReadLines("Inputs\\day05.txt");
             var occupiedSeats = input.Select(seatDefinition => new Seat(seatDefinition).Id).OrderBy(id => id).ToArray();
             var possibleSeatIds = Enumerable.Range(0, 128 * 8);
 

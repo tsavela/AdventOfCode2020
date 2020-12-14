@@ -5,7 +5,7 @@ using Xunit;
 
 namespace Tests
 {
-    public class Day2Tests
+    public class Day02Tests
     {
         [Theory]
         [InlineData("1-3 a", "abcde")]
@@ -33,7 +33,7 @@ namespace Tests
         [Fact]
         public void FilterValidPasswords_ShouldReturnCorrectNumberOfItemsForMaxMinValidationStrategy_GivenProblemInput()
         {
-            var input = File.ReadAllLines("Inputs\\day2.txt");
+            var input = File.ReadAllLines("Inputs\\day02.txt");
             var sut = new PasswordValidator(new MaxMinCharacterCountValidationStrategy());
 
             var actual = sut.FilterValidPasswords(input);
@@ -67,7 +67,7 @@ namespace Tests
         [Fact]
         public void FilterValidPasswords_ShouldReturnCorrectNumberOfItemsForPositionValidationStrategy_GivenProblemInput()
         {
-            var input = File.ReadAllLines("Inputs\\day2.txt");
+            var input = File.ReadAllLines("Inputs\\day02.txt");
             var sut = new PasswordValidator(new CharacterPositionValidationStrategy());
 
             var actual = sut.FilterValidPasswords(input);

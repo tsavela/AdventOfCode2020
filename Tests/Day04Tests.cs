@@ -7,7 +7,7 @@ using Xunit;
 
 namespace Tests
 {
-    public class Day4Tests
+    public class Day04Tests
     {
         [Fact]
         public void ValidatePassport_ShouldReturnTrue_WhenGivenValidPassport()
@@ -43,7 +43,7 @@ namespace Tests
         [Fact]
         public void ValidatePassport_ShouldReturnNumberOfValidPassports_WhenIteratedOverInputData()
         {
-            var input = File.ReadAllText("Inputs\\day4.txt");
+            var input = File.ReadAllText("Inputs\\day04.txt");
             var sut = new PassportProcessing();
             var passportsData = sut.ParseInputData(input);
 

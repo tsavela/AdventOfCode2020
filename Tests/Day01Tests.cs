@@ -6,7 +6,7 @@ using Xunit;
 
 namespace Tests
 {
-    public class Day1Tests
+    public class Day01Tests
     {
         [Fact]
         public void FindPairWithSum_ShouldFindCorrectPair_GivenSumThatHasMatchingPair()
@@ -21,7 +21,7 @@ namespace Tests
         [Fact]
         public void FindPairWithSum_ShouldFindCorrectPair_GivenProblemInput()
         {
-            var input = File.ReadAllLines("Inputs\\day1.txt").Select(int.Parse).ToArray();
+            var input = File.ReadAllLines("Inputs\\day01.txt").Select(int.Parse).ToArray();
             var sut = new ExpenseReportCalculator();
 
             var actual = sut.FindPairWithSum(input, 2020);
@@ -43,7 +43,7 @@ namespace Tests
         [Fact]
         public void FindTripletWithSum_ShouldFindCorrectTriplet_GivenProblemInput()
         {
-            var input = File.ReadAllLines("Inputs\\day1.txt").Select(int.Parse).ToArray();
+            var input = File.ReadAllLines("Inputs\\day01.txt").Select(int.Parse).ToArray();
             var sut = new ExpenseReportCalculator();
 
             var actual = sut.FindTripletWithSum(input, 2020);

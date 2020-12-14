@@ -6,7 +6,7 @@ using Xunit;
 
 namespace Tests
 {
-    public class Day3Tests
+    public class Day03Tests
     {
         [Fact]
         public void CalculateNumberOfTrees_ShouldReturnTotalNumberOfTrees_GivenSmallMap()
@@ -43,7 +43,7 @@ namespace Tests
         [Fact]
         public void CalculateNumberOfTrees_ShouldReturnTotalNumberOfHits_GivenProblemInputAndTrajectory3And1()
         {
-            var map = File.ReadAllLines("Inputs\\day3.txt");
+            var map = File.ReadAllLines("Inputs\\day03.txt");
             var sut = new TobogganTrajectory();
 
             var actual = sut.CalculateNumberOfTrees(map, (3, 1));
@@ -54,7 +54,7 @@ namespace Tests
         [Fact]
         public void CalculateNumberOfTrees_ShouldReturnTotalNumberOfTrees_GivenProblemInputAndMultipleTrajectories()
         {
-            var map = File.ReadAllLines("Inputs\\day3.txt");
+            var map = File.ReadAllLines("Inputs\\day03.txt");
             var sut = new TobogganTrajectory();
             var trajectories = new[] {(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)};
 
